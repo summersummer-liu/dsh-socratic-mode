@@ -2,7 +2,7 @@
 
 **A Socratic learning mode for [DeepSeek Harness](https://github.com/deepseek-ai) — it gives you one small piece of real knowledge, then asks one invitational question. No lectures, no interrogation.**
 
-![check](https://github.com/summersummer-liu/dsh-socratic-mode/actions/workflows/check.yml/badge.svg)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 [中文说明](README.zh-CN.md) · MIT License
 
