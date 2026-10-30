@@ -222,6 +222,21 @@ invalid config: - $allowParallelInProgress missing required value
 
 ---
 
+## 维护者：重新发布
+
+本仓库在「`github.com` 的 git 直连不通」的机器上也能发布：`tools/publish-github.ps1` 走 GitHub REST API，建仓库并把全部文件作为一次提交推上去。
+
+```powershell
+$env:GCM_INTERACTIVE="never"
+$cred = "protocol=https`nhost=github.com`n`n" | git credential fill
+$env:GH_TOKEN = ($cred | Select-String -Pattern '^password=(.+)$').Matches.Groups[1].Value
+powershell -NoProfile -ExecutionPolicy Bypass -File tools/publish-github.ps1
+```
+
+注意：`.github/workflows/` 下的文件需要 token 带 `workflow` scope；scope 不够时 GitHub 会以 404 拒绝上传，脚本已跳过该目录（CI 文件保留在本地仓库）。
+
+---
+
 ## License
 
 MIT — 见 [LICENSE](LICENSE)。
