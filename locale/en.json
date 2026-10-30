@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Socratic Learning Mode",
+    "description": "Adds an agent preset that teaches by asking one question at a time — questions, counterexamples and transfer tasks instead of lectures."
+  }
+}

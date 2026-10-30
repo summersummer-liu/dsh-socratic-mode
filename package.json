@@ -1,0 +1,65 @@
+{
+  "name": "dsh-socratic-mode",
+  "version": "1.0.0",
+  "description": "Socratic learning mode for DeepSeek Harness — an agent preset that gives you one small piece of real knowledge, then asks one invitational question per turn, instead of lecturing or interrogating.",
+  "type": "module",
+  "exports": {
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "skills",
+    "tools",
+    "README.md",
+    "README.zh-CN.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "agent-preset",
+    "socratic",
+    "socratic-method",
+    "tutor",
+    "tutoring",
+    "learning",
+    "education",
+    "苏格拉底",
+    "学习模式",
+    "教学模式"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/summersummer-liu/dsh-socratic-mode.git"
+  },
+  "homepage": "https://github.com/summersummer-liu/dsh-socratic-mode",
+  "bugs": {
+    "url": "https://github.com/summersummer-liu/dsh-socratic-mode/issues"
+  },
+  "scripts": {
+    "check": "node tools/check-bundle.cjs",
+    "pack:check": "npm pack --dry-run"
+  },
+  "devDependencies": {
+    "yaml": "^2.8.1"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "dsh": {
+    "engines": {
+      "dsh": ">=0.2.1-rc.3"
+    },
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}
