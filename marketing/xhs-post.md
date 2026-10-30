@@ -109,6 +109,10 @@ dsh-socratic-mode 就是按这个结构做的，给 DeepSeek Harness 的 Agent �
 
 ## 二、发布建议
 
+> **配图已生成**：`marketing/xhs-images/01-cover.png`、`02-structure.png`、`03-pressure.png`、`04-install.png`
+> （3:4，2400×3200，ready-poster-printer 引擎产出，对应下方「配图」一节的 1–4）。直接上传这四张即可；
+> 若要更生活化，可再补一张真实会话截图替换 `02`。
+
 ### 首发选哪版
 
 **先发 A（痛点共鸣版）**，理由：
